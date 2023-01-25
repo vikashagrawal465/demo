@@ -1,6 +1,10 @@
 Q1. What is the name of the feature responsible for generating Regex objects?
 Ans1 - The re.compile() function returns Regex object.
 
+  import re
+  re.compile("string")
+  #The re.compile() function returns Regex objects.
+
 Q2. Why do raw strings often appear in Regex objects?
 
 Ans2 -Raw strings are used so that backslashes do not have to be escaped. In normal string \n, \t is treated as new line and tab but when we create raw string then Raw strings treat backslash as a literal character.
@@ -32,7 +36,13 @@ Ans7 - If the regex has no groups, a list of strings is returned. If the regex h
 
 Q8. In standard expressions, what does the | character mean?
 
-Ans8. - The | character means signifies matching "either, or" between two groups. | symbol works as the or operator meaning it checks whether the pattern before or after the or symbol is present in the string or not
+Ans8. - The | character means signifies matching "either, or" between two groups. | symbol works as the or operator meaning it checks whether the pattern before or after the or symbol is present in the string or not.
+
+For example, the regular expression r'Cricket|Soccer Sport' will match either 'Cricket' or 'Soccer Sport'.
+
+When both Cricket and Soccer Sport occur in the searched string, the first occurrence of matching text will be returned as the Match object.
+
+
 
 Q9. In regular expressions, what does the character stand for?
 
